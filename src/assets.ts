@@ -255,13 +255,14 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'WETH',
-    feedAvailability: { 1: true, 10: true, 42161: true },
+    feedAvailability: { 1: true, 10: true, 42161: true, 97: true, },
     name: 'Wrapped Ether',
     decimals: 18,
     addresses: {
       1: WETHAddress,
       10: '0x4200000000000000000000000000000000000006',
       42161: '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
+      97: '0xBE2a3B225aDA4142C42A36CfbD5b04F28D261CA8',
     },
     yearnCollateral: true,
   },
@@ -280,7 +281,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'DAI',
-    feedAvailability: { 1: true, 10: true, 42161: true },
+    feedAvailability: { 1: true, 10: true, 42161: true, 97: true, },
     name: 'Dai',
     decimals: 18,
     exchange: true,
@@ -290,6 +291,7 @@ export const assets: AssetDataBase[] = [
       1: DAIAddress,
       10: '0xda10009cbd5d07dd0cecc66161fc93d7c9000da1',
       42161: '0xda10009cbd5d07dd0cecc66161fc93d7c9000da1',
+      97: '0xFCcB260C9074faBB69702C1972aa747aAC6e654F',
     },
     isStable: true,
   },
@@ -437,7 +439,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'USDC',
-    feedAvailability: { 1: true, 10: true, 42161: true },
+    feedAvailability: { 1: true, 10: true, 42161: true, 97: true, },
     name: 'USD Coin',
     decimals: 6,
     exchange: true,
@@ -447,6 +449,7 @@ export const assets: AssetDataBase[] = [
       1: USDCAddress,
       10: '0x7f5c764cbc14f9669b88837ca1490cca17c31607',
       42161: '0xff970a61a04b1ca14834a43f5de4533ebddb5cc8',
+      97: '0x345dCB7B8F17D342A3639d1D9bD649189f2D0162',
     },
     isStable: true,
   },
@@ -504,7 +507,7 @@ export const assets: AssetDataBase[] = [
   {
     ...assetProto,
     symbol: 'USDT',
-    feedAvailability: { 1: true, 10: true, 42161: true },
+    feedAvailability: { 1: true, 10: true, 42161: true, 97: true, },
     name: 'Tether',
     decimals: 6,
     exchange: true,
@@ -513,6 +516,7 @@ export const assets: AssetDataBase[] = [
       1: USDTAddress,
       10: '0x94b008aa00579c1307b0ef2c499ad98a8ce58e58',
       42161: '0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9',
+      97: '0x780397E17dBF97259F3b697Ca3a394fa483A1419',
     },
     isStable: true,
   },
@@ -2659,7 +2663,8 @@ export const assets: AssetDataBase[] = [
     decimals: 18,
     isStable: true,
   },
-  {...assetProto,
+  {
+    ...assetProto,
     symbol: 'reCRV',
     name: 'Curve.fi ETH/rETH',
     addresses: {
@@ -2667,7 +2672,8 @@ export const assets: AssetDataBase[] = [
     },
     decimals: 18,
   },
-  {...assetProto,
+  {
+    ...assetProto,
     symbol: 'cbeCRV',
     name: 'Curve.fi ETH/cbETH',
     addresses: {
@@ -2675,7 +2681,8 @@ export const assets: AssetDataBase[] = [
     },
     decimals: 18,
   },
-  {...assetProto,
+  {
+    ...assetProto,
     symbol: 'sfrxETH',
     name: 'Staked Frax Ether',
     addresses: {
@@ -2683,12 +2690,46 @@ export const assets: AssetDataBase[] = [
     },
     decimals: 18,
   },
-  {...assetProto,
+  {
+    ...assetProto,
     symbol: 'crvUSD',
     name: 'Curve.Fi USD Stablecoin',
     addresses: {
       1: crvUSD,
     },
     decimals: 18,
+  },
+  {
+    ...assetProto,
+    symbol: 'BTCB',
+    name: 'BTCB Token',
+    exchange: true,
+    feedAvailability: { 97: true, },
+    decimals: 18,
+    addresses: {
+      97: '0x639138a1B91799944Ad34355fd8d6a2d696c3Ca9',
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'TRAVA',
+    name: 'TRAVA Token',
+    exchange: true,
+    feedAvailability: { 97: true, },
+    decimals: 18,
+    addresses: {
+      97: '0xE1F005623934D3D8C724EC68Cc9bFD95498D4435',
+    }
+  },
+  {
+    ...assetProto,
+    symbol: 'WBNB',
+    name: 'Wrapped BNB',
+    exchange: true,
+    feedAvailability: { 97: true, },
+    decimals: 18,
+    addresses: {
+      97: '0x910CB19698Eac48a6AB7Ccc9542B756f2Bdd67C6',
+    }
   },
 ];

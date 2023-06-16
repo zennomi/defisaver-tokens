@@ -1,6 +1,6 @@
 {
-  "name": "@defisaver/tokens",
-  "version": "1.4.44",
+  "name": "@zennomi/tokens",
+  "version": "1.0.1",
   "description": "Centralized asset data & utility functions",
   "main": "umd/index.js",
   "module": "esm/index.js",
@@ -34,10 +34,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DecenterApps/defisaver-tokens.git"
+    "url": "git+https://github.com/zennomi/defisaver-tokens.git"
   },
   "bugs": {
-    "url": "https://github.com/DecenterApps/defisaver-tokens/issues"
+    "url": "https://github.com/zennomi/defisaver-tokens/issues"
   },
-  "homepage": "https://github.com/DecenterApps/defisaver-tokens#readme"
+  "homepage": "https://github.com/zennomi/defisaver-tokens#readme"
 }
